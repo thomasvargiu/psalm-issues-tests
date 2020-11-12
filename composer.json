@@ -1,0 +1,31 @@
+{
+    "name": "thomasvargiu/psalm-issues-tests",
+    "description": "Tests psalm with stubs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Vargiu",
+            "email": "tvargiu@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-simplexml": "*",
+        "vimeo/psalm": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Original\\": "src"
+        }
+    },
+    "scripts": {
+        "test": [
+            "psalm --version",
+            "psalm --no-cache --show-info=true test.php"
+        ]
+    }
+}

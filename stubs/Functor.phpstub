@@ -1,0 +1,18 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Original;
+
+/**
+ * @template T
+ */
+interface Functor
+{
+    /**
+     * @template F
+     * @param callable(T): F $function
+     * @return Functor<F>
+     */
+    public function map(callable $function): Functor;
+}

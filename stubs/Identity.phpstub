@@ -1,0 +1,26 @@
+<?php
+
+namespace Original;
+
+/**
+ * @template T
+ * @template-implements Functor<T>
+ */
+class Identity implements Functor
+{
+    /**
+     * @param T $value
+     */
+    public function __construct($value)
+    {
+    }
+
+    /**
+     * @template F
+     * @psalm-param callable(T): F $transformation
+     * @psalm-return Identity<F>
+     */
+    public function map(callable $transformation): Functor
+    {
+    }
+}
