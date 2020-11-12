@@ -17,7 +17,8 @@
     </fileExtensions>
 
     <stubs>
-        <file name="stubs/Functor.phpstub" />
-        <file name="stubs/Identity.phpstub" />
+        <!--<file name="stubs/A.phpstub" />-->
+        <file name="stubs/B.phpstub" />
+        <file name="stubs/C.phpstub" />
     </stubs>
 </psalm>
