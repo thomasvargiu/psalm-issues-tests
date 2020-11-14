@@ -20,5 +20,6 @@
         <!--<file name="stubs/A.phpstub" />-->
         <file name="stubs/B.phpstub" />
         <file name="stubs/C.phpstub" />
+        <file name="stubs/Foo.phpstub" />
     </stubs>
 </psalm>

@@ -3,10 +3,12 @@ declare(strict_types=1);
 
 namespace Original;
 
-/**
- * @template T
- */
-interface B extends A
+interface B
 {
+    /**
+     * @param callable $function
+     * @return mixed
+     */
+    public function bind(callable $function);
 }
 

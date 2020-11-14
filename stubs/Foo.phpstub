@@ -1,0 +1,26 @@
+<?php
+
+namespace Original;
+
+/**
+ * @template T
+ * @template-implements C<T>
+ */
+class Foo implements C
+{
+    /**
+     * @param T $value
+     */
+    public function __construct($value)
+    {
+    }
+
+    /**
+     * @template U of Foo
+     * @param callable(T): U $function
+     * @return U
+     */
+    public function bind(callable $function)
+    {
+    }
+}

@@ -1,12 +1,16 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Original;
 
 /**
  * @template T
  */
-interface B extends A
+interface B
 {
+    /**
+     * @template U of B
+     * @param callable(T): U $function
+     * @return U
+     */
+    public function bind(callable $function);
 }
